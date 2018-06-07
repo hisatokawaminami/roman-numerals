@@ -13,11 +13,27 @@ Create a webpage for Roman Numeral Converter
 
 |Spec|Input Numbers|Roman Numeral Output|
 |:--------|:-------------:|:--------------:|
-|Program converts numbers into Roman Numerals| 99 | XCIX
+|Program Input does not take alphabetical characters | asdfsd| invalid  
 |Program check if the inputted numbers are more than 0 and less than 3,999|4,001|invalid
 |Program gathers value converts into parseInt "no decimals"| "1.847"| 2
-|Program Input does not take alphabetical characters | asdfsd| invalid  
-|
+|Convert "1" into "I"|1|I
+|Convert "5" into "V"|5|V
+|Convert "10" into "X"|10|X
+|Convert "50" into "L"|50|L
+|Convert "100" into "C"|100|C
+|Convert "500" into "D"|500|D
+|Convert "1,000" into "M"|1,000|M
+|Add the value of all the symbols|2 |II
+|When two of the same identical characters in a row the value is added| 20| XX
+|When there is three of the same characters in a row side by side the value added|30|XXX
+|If a smaller valued character is on the right side of the character this means it is added and the value changes|6|VI
+|If a smaller valued character is on the left side of the character this means it is subtracted and changes the value| 4| IV
+|Only a single smaller denomination character can be on the lefthand side of the bigger denominator| IIV (3)| invalid (IV or XL are the correct form)
+|Add the value of all the symbols|66 |LXVI
+|No more than three characters in a row|90|XC NOT LXXXX
+
+
+
 
 ## Technology Used
 
